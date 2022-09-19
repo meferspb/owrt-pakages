@@ -13,8 +13,11 @@ Index: accel-ppp-master/accel-pppd/CMakeLists.txt
 ===================================================================
 --- accel-ppp-master.orig/accel-pppd/CMakeLists.txt
 +++ accel-ppp-master/accel-pppd/CMakeLists.txt
-@@ -136,10 +136,3 @@ INSTALL(FILES accel-ppp.conf.5 DESTINATION share/man/man5)
- 
+@@ -134,11 +134,3 @@ INSTALL(TARGETS accel-pppd
+)
+
+INSTALL(FILES accel-ppp.conf.5 DESTINATION share/man/man5)
+
 -IF (NOT DEFINED CPACK_TYPE)
 -	INSTALL(FILES accel-ppp.conf DESTINATION "${CMAKE_INSTALL_SYSCONFDIR}" RENAME accel-ppp.conf.dist)
 -
