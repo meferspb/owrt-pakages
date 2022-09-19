@@ -9,18 +9,3 @@ Index: accel-ppp-master/CMakeLists.txt
 -endif ()
 -
  project(accel-ppp C)
-Index: accel-ppp-master/accel-pppd/CMakeLists.txt
-===================================================================
---- accel-ppp-master.orig/accel-pppd/CMakeLists.txt
-+++ accel-ppp-master/accel-pppd/CMakeLists.txt
-@@ -135,10 +135,3 @@
-
-INSTALL(FILES accel-ppp.conf.5 DESTINATION share/man/man5)
-
--IF (NOT DEFINED CPACK_TYPE)
--	INSTALL(FILES accel-ppp.conf DESTINATION "${CMAKE_INSTALL_SYSCONFDIR}" RENAME accel-ppp.conf.dist)
--
--	INSTALL(DIRECTORY DESTINATION "${CMAKE_INSTALL_LOCALSTATEDIR}/log/accel-ppp")
--	INSTALL(DIRECTORY DESTINATION "${CMAKE_INSTALL_LOCALSTATEDIR}/lib/accel-ppp")
--ENDIF (NOT DEFINED CPACK_TYPE)
--
