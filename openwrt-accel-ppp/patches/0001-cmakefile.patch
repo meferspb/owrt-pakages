@@ -9,8 +9,7 @@ Index: accel-ppp-master/CMakeLists.txt
 -endif ()
 -
  project(accel-ppp C)
- 
- include(cmake/cpack.cmake)
+
 Index: accel-ppp-master/accel-pppd/CMakeLists.txt
 ===================================================================
 --- accel-ppp-master.orig/accel-pppd/CMakeLists.txt
