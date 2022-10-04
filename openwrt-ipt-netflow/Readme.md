@@ -1,4 +1,5 @@
 **Notice!**
+
 When building a distribution on the aarch64 architecture for openwrt 21.02, you will need to copy the directory in the Linux kernel sources from arm64 to aarch64.
 For example, with this command (the kernel version needs to be corrected):
 
