@@ -1,4 +1,4 @@
-Index: ipt-netflow-2.2/Makefile.in
+Index: ipt-netflow-2.5.1/Makefile.in
 ===================================================================
 --- ipt-netflow-2.5.1.orig/Makefile.in
 +++ ipt-netflow-2.5.1/Makefile.in
