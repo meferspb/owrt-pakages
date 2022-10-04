@@ -29,3 +29,4 @@ lx2160
 # ==Notice==
 
 updete manual later
+integrated billing system for lx2160 https://mikbill.pro later
