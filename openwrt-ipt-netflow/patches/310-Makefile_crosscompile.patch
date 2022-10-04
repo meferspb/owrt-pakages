@@ -1,7 +1,7 @@
 Index: ipt-netflow-2.2/Makefile.in
 ===================================================================
---- ipt-netflow-2.2.orig/Makefile.in
-+++ ipt-netflow-2.2/Makefile.in
+--- ipt-netflow-2.5.1.orig/Makefile.in
++++ ipt-netflow-2.5.1/Makefile.in
 @@ -64,10 +64,10 @@ sinstall: | snmp_NETFLOW.so IPT-NETFLOW-
  	fi
  
