@@ -27,30 +27,24 @@ For ipt-netflow 2.5.1 patches are needed, drop it for next version or git master
 Making and installilng
 ===
 
-```shell
-mkdir debian-toolchain
-sudo debootstrap jessie debian-toolchain
-sudo chroot debian-toolchain
+```cd openwrt-trunk```
 
-. /etc/profile
-apt update
-apt install git ssh-client build-essential mercurial subversion \
-   binutils flex bzip2 asciidoc ncurses-dev libssl-dev gawk zlib1g-dev fastjar
+```./scripts/feeds update -a```
 
-adduser user
-su user
-. /etc/profile
-cd ~
+**Notice!**
 
-git clone https://github.com/openwrt/openwrt.git openwrt-trunk
-git clone https://github.com/aabc/ipt-netflow.git
+When building a distribution on the aarch64 architecture for openwrt 21.02, you will need to copy the directory in the Linux kernel sources from arm64 to aarch64.
+For example, with this command (the kernel version needs to be corrected):
 
-cd openwrt-trunk
-./scripts/feeds update -a
-ln -s ~/ipt-netflow/openwrt/ package/network/ipt-netflow
+```cp build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/arm64 build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/aarch64```
+
+При сборке дистрибутива на архитектуре aarch64 для openwrt 21.02 потребуется скопировать директорию в исходниках ядра линукс из arm64 в aarch64.
+Например этой коммандой (версию ядра необходимо откорректировать):
+
+```cp build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/arm64 build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/aarch64```
 
 
-make menuconfig
+```make menuconfig
   #select target and device
   #go to network/netflow and check both
 
