@@ -2,7 +2,7 @@
 When building a distribution on the aarch64 architecture for openwrt 21.02, you will need to copy the directory in the Linux kernel sources from arm64 to aarch64.
 For example, with this command (the kernel version needs to be corrected):
 
-```cp build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/arm64 build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux- 5.4.211/arch/aarch64```
+```cp build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/arm64 build_dir/target-aarch64_generic_glibc/linux-layerscape_armv8_64b/linux-5.4.211/arch/aarch64```
 
 При сборке дистрибутива на архитектуре aarch64 для openwrt 21.02 потребуется скопировать директорию в исходниках ядра линукс из arm64 в aarch64.
 Например этой коммандой (версию ядра необходимо откорректировать):
