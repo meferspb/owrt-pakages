@@ -13,7 +13,7 @@ PKG_VERSION:=master
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=https://github.com/meferspb/accel-ppp.git
-# PKG_SOURCE_VERSION:=d25c9cf5a9c1c5a16e20c544937e8d34a035bfc3
+PKG_SOURCE_VERSION:=fd2ff61e75ad7c93deba9778fa1a784279e4bd86
 
 PKG_MAINTAINER:=Viktor Krasnikov <vmkrasnikov1981@gmail.com>
 PKG_LICENSE:=GPL-2.0
